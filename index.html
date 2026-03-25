@@ -1,41 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Train App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
+<div id="home" class="page active home">
 
-<body>
+  <div class="logo">БГ:ВОЗ</div>
 
-  <div id="home" class="page active">
-    <h1>🚆 Train App</h1>
-    <button onclick="showPage('departures')">Station Departures</button>
-    <button onclick="showPage('plan')">Plan a Trip</button>
+  <div class="card" onclick="showPage('departures')">
+    <div>
+      <h2>Станични ред вожње</h2>
+    </div>
+    <span>🚆</span>
   </div>
 
-  <div id="departures" class="page">
-    <h2>🚉 Departures</h2>
-    <div id="board"></div>
+  <div class="card" onclick="showPage('plan')">
+    <div>
+      <h2>Планирај путовање</h2>
+    </div>
+    <span>📍</span>
   </div>
 
-  <div id="plan" class="page">
-    <h2>🔍 Plan a Trip</h2>
-  </div>
-
-  <div id="map" class="page">
-    <h2>🗺 Map</h2>
-  </div>
-
-  <div class="navbar">
-    <button onclick="showPage('home')">🏠</button>
-    <button onclick="showPage('departures')">🚉</button>
-    <button onclick="showPage('plan')">🔍</button>
-    <button onclick="showPage('map')">🗺</button>
-  </div>
-
-  <script src="app.js"></script>
-
-</body>
-</html>
+</div>
