@@ -10,12 +10,19 @@ const trains = [
 
 function loadBoard() {
   const board = document.getElementById("board");
+  if (!board) return;
+
   board.innerHTML = "";
 
   trains.forEach(t => {
     const row = document.createElement("div");
     row.className = "train";
-    row.innerHTML = `${t.line} | ${t.dest} | ${t.time} | Platform ${t.platform}`;
+    row.innerHTML = `
+      <span>${t.line}</span>
+      <span>${t.dest}</span>
+      <span>${t.time}</span>
+      <span>${t.platform}</span>
+    `;
     board.appendChild(row);
   });
 }
