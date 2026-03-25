@@ -1,19 +1,56 @@
-<div id="home" class="page active home">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BG:VOZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <div class="logo">БГ:ВОЗ</div>
+<body>
 
-  <div class="card" onclick="showPage('departures')">
-    <div>
+  <!-- HOME -->
+  <div id="home" class="page active home">
+
+    <div class="logo">БГ:ВОЗ</div>
+
+    <div class="card" onclick="showPage('departures')">
       <h2>Станични ред вожње</h2>
+      <span>🚆</span>
     </div>
-    <span>🚆</span>
-  </div>
 
-  <div class="card" onclick="showPage('plan')">
-    <div>
+    <div class="card" onclick="showPage('plan')">
       <h2>Планирај путовање</h2>
+      <span>📍</span>
     </div>
-    <span>📍</span>
+
   </div>
 
-</div>
+  <!-- DEPARTURES -->
+  <div id="departures" class="page">
+    <h2>🚉 Departures</h2>
+    <div id="board"></div>
+  </div>
+
+  <!-- PLAN -->
+  <div id="plan" class="page">
+    <h2>🔍 Plan a Trip</h2>
+  </div>
+
+  <!-- MAP -->
+  <div id="map" class="page">
+    <h2>🗺 Map</h2>
+  </div>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <button onclick="showPage('home')">🏠</button>
+    <button onclick="showPage('departures')">🚉</button>
+    <button onclick="showPage('plan')">🔍</button>
+    <button onclick="showPage('map')">🗺</button>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
