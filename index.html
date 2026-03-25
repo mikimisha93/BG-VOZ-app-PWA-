@@ -9,48 +9,27 @@
 
 <body>
 
+  <!-- BACKGROUND -->
+  <div class="bg"></div>
+
   <!-- HOME -->
-  <div id="home" class="page active home">
+  <div id="home" class="page active">
+    <div class="center">
 
-    <div class="logo">БГ:ВОЗ</div>
+      <div class="logo">БГ:ВОЗ</div>
 
-    <div class="card" onclick="showPage('departures')">
-      <h2>Станични ред вожње</h2>
-      <span>🚆</span>
+      <div class="card">
+        <span>Станични ред вожње</span>
+        <span>🚆</span>
+      </div>
+
+      <div class="card">
+        <span>Планирај путовање</span>
+        <span>📍</span>
+      </div>
+
     </div>
-
-    <div class="card" onclick="showPage('plan')">
-      <h2>Планирај путовање</h2>
-      <span>📍</span>
-    </div>
-
   </div>
-
-  <!-- DEPARTURES -->
-  <div id="departures" class="page">
-    <h2>🚉 Departures</h2>
-    <div id="board"></div>
-  </div>
-
-  <!-- PLAN -->
-  <div id="plan" class="page">
-    <h2>🔍 Plan a Trip</h2>
-  </div>
-
-  <!-- MAP -->
-  <div id="map" class="page">
-    <h2>🗺 Map</h2>
-  </div>
-
-  <!-- NAVBAR -->
-  <div class="navbar">
-    <button onclick="showPage('home')">🏠</button>
-    <button onclick="showPage('departures')">🚉</button>
-    <button onclick="showPage('plan')">🔍</button>
-    <button onclick="showPage('map')">🗺</button>
-  </div>
-
-  <script src="app.js"></script>
 
 </body>
 </html>
